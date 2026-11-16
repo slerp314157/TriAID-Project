@@ -1,0 +1,86 @@
+Turn,Timestamp,User_Message,Intervention_Level,Intervention_Prompt,Assistant_Response,Intervention_Provided
+1,2026-11-15T17:57:46.220451, How can I test my Python code as I learn?,1,"
+    Gently check in with the test taker.
+    Acknowledge their frustration without being patronizing.
+    Offer support, but do not give hints or solve the problem.
+    Keep your response brief.
+    ","Quick check-in: are you stuck on a specific exercise, or asking generally? Testing while learning can feel overwhelming—that’s normal.
+
+A simple approach: use the Python REPL for quick checks, add `assert` statements for expected outputs, and write small `pytest`/`unittest` cases for each function, including edge cases. If you share what you’re working on, I can help you plan tests without giving away the solution.",True
+1,2026-11-15T17:57:56.561594, How can I test my Python code as I learn?,2,"
+    Offer the test taker a small hint.
+    Help them think about the problem without giving away the answer.
+    Keep the hint relevant to the current problem.
+    ","A small hint: start by testing **one tiny piece at a time**.
+
+Pick a single function, choose a known input, and write down what you expect:
+
+```python
+def add(a, b):
+    return a + b
+
+assert add(2, 3) == 5
+```
+
+Run it. If it passes, add another case—especially an edge case. When you’re comfortable, try `pytest` to organize those checks.",True
+1,2026-11-15T17:58:09.026001, How can I test my Python code as I learn?,3,"
+    Provide guided help.
+    Break the problem into smaller, manageable steps.
+    Ask questions that help the test taker reason through the problem.
+    Avoid simply giving away the answer.
+    ","Great question — testing as you learn is a skill, not just a final check. Let’s make it concrete.
+
+Try this small loop:
+
+1. **Pick one tiny behavior** — e.g., “this function should return the sum of two numbers.”
+2. **Write the expected result first** — e.g., `add(2, 3)` should be `5`.
+3. **Run it in the simplest way** — use `print(add(2, 3))` or an `assert`:
+   ```python
+   assert add(2, 3) == 5
+   ```
+4. **Check the actual vs. expected** — if it fails, read the error and test one smaller case.
+5. **Repeat with one more case** — e.g., negative numbers or zero.
+6. **When ready, use `pytest`** — put tests in `test_*.py` files and run `pytest`.
+
+A good learning habit is: **one small expected behavior → one small test → run it → adjust.**
+
+What are you learning right now — functions, loops, classes, or something else? If you share a tiny example of your code, I can help you choose the first test to write.",True
+1,2026-11-15T17:59:36.517549,Give me a problem to solve that requires the use of an if–then statement.,1,"
+    Gently check in with the test taker.
+    Acknowledge their frustration without being patronizing.
+    Offer support, but do not give hints or solve the problem.
+    Keep your response brief.
+    ",It sounds like you’re looking for a clear if–then task. I’m here to help you work through the one you’re on—what scenario or question are you trying to apply it to?,True
+1,2026-11-15T17:59:59.146298,Give me a problem to solve that requires the use of an if–then statement.,2,"
+    Offer the test taker a small hint.
+    Help them think about the problem without giving away the answer.
+    Keep the hint relevant to the current problem.
+    ","Here’s a problem for you:
+
+A store charges $5 per item. However, if a customer buys 10 or more items, each item costs $4 instead. Write a rule or short program that calculates the total cost for any number of items. Your solution must use an **if–then** statement to decide which price applies.
+
+**Small hint:** First identify the condition that changes the price. Then think about what the total should be when that condition is true, and what it should be when it is false.",True
+1,2026-11-15T18:00:12.816438,Give me a problem to solve that requires the use of an if–then statement.,3,"
+    Provide guided help.
+    Break the problem into smaller, manageable steps.
+    Ask questions that help the test taker reason through the problem.
+    Avoid simply giving away the answer.
+    ","Here’s a problem that requires an **if–then statement**:
+
+**Problem:**  
+A store gives a discount based on the total purchase amount:
+
+- If the total is **$100 or more**, the customer gets **20% off**.
+- If the total is **between $50 and $99.99**, the customer gets **10% off**.
+- Otherwise, there is **no discount**.
+
+Write pseudocode or an algorithm that asks for the purchase total and displays the final amount the customer must pay. Your solution must use **if–then statements**.
+
+**Guided steps:**
+1. What input does the program need?
+2. What output should it display?
+3. Which condition should be checked first? Why?
+4. What should happen if the total is exactly $100? Exactly $50?
+5. What should happen if none of the discount conditions are true?
+
+Try writing your pseudocode first, and I can help you check the logic without giving away the answer.",True

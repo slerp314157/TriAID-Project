@@ -1,0 +1,175 @@
+Turn,Timestamp,User_Message,Intervention_Level,Intervention_Prompt,Assistant_Response,Intervention_Provided,
+1,2026-11-15T18:11:20.213446,How do I use ifï¿½ï¿½ï¿½then statements to control the flow of a pr,1,"
+    Gently check in with the test taker.
+    Acknowledge their frustration without being patronizing.
+    Offer support, but do not give hints or solve the problem.
+    Keep your response brief.
+    ","Sounds like control flow is getting frustratingï¿½ï¿½ï¿½thatï¿½ï¿½ï¿½s fair. I can help you reason through it without giving away the answer: an `ifï¿½ï¿½ï¿½then` checks a condition and runs a block only when that condition is true; an `else` handles the other path. Tell me what condition youï¿½ï¿½ï¿½re testing and what should happen in each case, and we can work through",TRUE,
+2,2026-11-15T18:11:40.033088,Describe how this is achieved in the Python language.,1,"
+    Gently check in with the test taker.
+    Acknowledge their frustration without being patronizing.
+    Offer support, but do not give hints or solve the problem.
+    Keep your response brief.
+    ","In Python, ï¿½ï¿½ï¿½ifï¿½ï¿½ï¿½thenï¿½ï¿½ï¿½ is written with `if`, a condition, a colon, and an indented block:
+
+```python
+if condition:
+    # runs when condition is true
+elif another_condition:
+    # runs when the first is false and this one is true
+else:
+    # runs when none above are true
+```
+
+Key points:
+- There is no `then` keyword; the colon and indentation define the block.
+- Conditions are expressions evaluated for truthiness.
+- `elif` and `else` are optional.
+- Python also has a conditional expression: `value_if_true if condition els",TRUE,
+1,2026-11-15T18:23:31.110445, How do I use ifï¿½ï¿½ï¿½then statements to control the flow of a pr,2,"
+    Offer the test taker a small hint.
+    Help them think about the problem without giving away the answer.
+    Keep the hint relevant to the current problem.
+    ","Think of an `ifï¿½ï¿½ï¿½then` statement as a fork in the road: you write a **condition** that evaluates to true or false, then place the code that should run **only when it is true** inside the `then` block. Code after the `if` continues normally. Ask yourself: what should happen when the condition is **false**ï¿½ï¿½ï¿½should the program skip ahead, or is there an `e",TRUE,
+2,2026-11-15T18:23:41.210893,Describe how this is achieved in the Python language.,2,"
+    Offer the test taker a small hint.
+    Help them think about the problem without giving away the answer.
+    Keep the hint relevant to the current problem.
+    ","In Python, focus on three syntax clues: the `if` line ends with a **colon**, the controlled code is **indented**, and there is no `then` keyword. Also consider how youï¿½ï¿½ï¿½d chain a second check with `elif` and a fallback with `else`. Try sketching a tiny example: one condition, one indented action, and one `else` actionï¿½ï¿½ï¿½then check where the indentation tells Python the",TRUE,
+1,2026-11-15T18:24:20.561751,How do I use ifï¿½ï¿½ï¿½then statements to control the flow of a pr,2,"
+    Offer the test taker a small hint.
+    Help them think about the problem without giving away the answer.
+    Keep the hint relevant to the current problem.
+    ","Think of an `ifï¿½ï¿½ï¿½then` as a gate: it checks a yes/no condition, and only runs the ï¿½ï¿½ï¿½thenï¿½ï¿½ï¿½ block when that condition is true.
+
+Try this before writing code:
+
+1. Say the condition in plain English:  
+   ï¿½ï¿½ï¿½If the score is at least 50, then show ï¿½ï¿½ï¿½passï¿½ï¿½ï¿½.ï¿½ï¿½ï¿½
+2. Identify what should happen only when the condition is true.
+3. Trace it with one true example and one false example.
+
+In many languages it looks like:
+
+```text
+if (condition) {
+    // do this only when condition is true
+}
+```
+
+If youï¿½ï¿½ï¿½re stuck, share the condition youï¿½ï¿½ï¿½re trying to check and what should happen when itï¿½ï¿½ï¿½s trueï¿½ï¿½ï¿½I",TRUE,
+1,2026-11-15T18:25:18.547078, How do I use ifï¿½ï¿½ï¿½then statements to control the flow of a pr,2,"
+    Offer the test taker a small hint.
+    Help them think about the problem without giving away the answer.
+    Keep the hint relevant to the current problem.
+    ","Think of an `ifï¿½ï¿½ï¿½then` as a fork in the road: first identify a condition that can be true or false, then decide what action should happen when itï¿½ï¿½ï¿½s true. Try sketching your condition and the two possible pathsï¿½ï¿½ï¿½one for true, one for otherwiseï¿½ï¿",TRUE,
+2,2026-11-15T18:25:31.424391,Describe how this is achieved in the Python language.,2,"
+    Offer the test taker a small hint.
+    Help them think about the problem without giving away the answer.
+    Keep the hint relevant to the current problem.
+    ","In Python, the fork-in-the-road idea becomes an `if` statement:
+
+- Start with `if` followed by a condition and a colon.
+- Put the ï¿½ï¿½ï¿½trueï¿½ï¿½ï¿½ path in an indented block underneath.
+- Use `elif` for another condition to check if the first was false.
+- Use `else` for the ï¿½ï¿½ï¿½otherwiseï¿½ï¿½ï¿½ path.
+- Indentationï¿½ï¿½ï¿½not bracesï¿½ï¿½ï¿½defines which lines belong to each path.
+
+A small hint: before writing Python, sketch your condition and the true/otherwise branches in plain English. Then translate each branch into an indented block. Also remember Python conditions donï¿½ï¿½ï¿½""""`, and `None` count as false in a condition.",TRUE,
+1,2026-11-15T18:25:55.794576, How do I use ifï¿½ï¿½ï¿½then statements to control the flow of a pr,3,"
+    Provide guided help.
+    Break the problem into smaller, manageable steps.
+    Ask questions that help the test taker reason through the problem.
+    Avoid simply giving away the answer.
+    ","Letï¿½ï¿½ï¿½s break it into small steps.
+
+1. **Name the decision your program needs to make.**  
+   Ask: *ï¿½ï¿½ï¿½What condition am I checking?ï¿½ï¿½ï¿½*  
+   Example idea: ï¿½ï¿½ï¿½Is the score high enough?ï¿½ï¿½ï¿½ or ï¿½ï¿½ï¿½Is the password correct?ï¿½ï¿½ï¿½
+
+2. **Write the condition as something that can be true or false.**  
+   Ask: *ï¿½ï¿½ï¿½What values or variables does this condition depend on?ï¿½ï¿½ï¿½*
+
+3. **Decide what should happen when the condition is true.**  
+   Ask: *ï¿½ï¿½ï¿½Which action belongs inside the `then` branch?ï¿½ï¿½ï¿½*
+
+4. **Decide what should happen when it is false ï¿½ï¿½ï¿½ if anything.**  
+   Ask: *ï¿½ï¿½ï¿½Do I need an `else` branch, or should the program just continue?ï¿½ï¿½ï¿½*
+
+5. **Trace it with a sample value.**  
+   Ask: *ï¿½ï¿½ï¿½If the condition were true right now, which line would run? If false, which line would run?ï¿½ï¿½ï¿½*
+
+A general shape is:
+
+```text
+if <condition> then
+    <do this when true>
+else
+    <do this when false>
+end if
+```
+
+But donï¿½ï¿½ï¿½t justranch.
+
+What specific program or language are you working in, and what decision are you trying to control?",TRUE,
+2,2026-11-15T18:26:13.779180,Describe how this is achieved in the Python language.,3,"
+    Provide guided help.
+    Break the problem into smaller, manageable steps.
+    Ask questions that help the test taker reason through the problem.
+    Avoid simply giving away the answer.
+    ","In Python, the ï¿½ï¿½ï¿½thenï¿½ï¿½ï¿½ part is **implicit**: you write `if <condition>:` and then indent the code that should run when the condition is true.
+
+**Basic shape**
+
+```python
+if condition:
+    # runs when condition is True
+else:
+    # runs when condition is False
+```
+
+Key points:
+
+1. **No `then` keyword**  
+   Python uses a colon `:` after the condition, and indentation marks the block.
+
+2. **Conditions are expressions that evaluate to true or false**  
+   Examples: `score >= 90""Sam""`, `is_ready`, `count > 0 and count < 10`.
+
+3. **Only one branch runs**  
+   Python checks the `if` condition. If it is true, it runs that indented block and skips the `else`. If false, it runs the `else` block.
+
+4. **Use `elif` for multiple choices**  
+   Python checks them top to bottom and runs the **first** true branch:
+
+```python
+score = 85
+
+if score >= 90:
+    print(""A"")
+elif score >= 80:
+    print(""B"")
+else:
+    print(""Needs improvement"")
+```
+
+With `score = 85`, the first condition is false, the second is true, so it prints `""B""` and skips the `else`.
+
+5. **Indentation controls flow**  
+   This is correct:
+
+```python
+if score >= 80:
+    print(""Pass"")
+```
+
+This is not:
+
+```python
+if score >= 80:
+print(""Pass"")   # IndentationError
+```
+
+So the Python version of ï¿½ï¿½ï¿½ifï¿½ï¿½ï¿½thenï¿½ï¿½ï¿½ is: **`if` + condition + colon + indented block**, optionally followed by `elif` and `else`.
+
+Quick check: if `score` were `95` in the example above, which branch w",TRUE,
