@@ -112,5 +112,5 @@ We matched the label to the DAiSEE emotion scores using the clip ID. These are o
 
 
 ## How to Run
-All models were built using Python 3 and can be run in Google Colab. Open the prefered model notebook in Colab, upload the required DAiSEE dataset and `observer_annotations.csv` file to Google Drive, and make sure the file paths match your folders. Once everything is set up, run the notebook cells in order to train and test the model and view the results.
+All models were built using Python 3 and can be run in Google Colab. Open the prefered model notebook in Colab (you can find the models on their respected branch), upload the required DAiSEE dataset and `observer_annotations.csv` file to Google Drive, and make sure the file paths match your folders. Once everything is set up, run the notebook cells in order to train and test the model and view the results.
 ### Database Website (Consent Required): https://people.iith.ac.in/vineethnb/resources/daisee/
