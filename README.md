@@ -46,10 +46,13 @@ This is how everything is going to stitch together. It's not a finished, live pi
 
 James is working on the computer vision portion. This will be what supplies the middle model with emotion scores.
 
-- Model and what it uses: [James: add this]
-- How to run it: [James: add this]
-- Results so far: [James: add this]
-- Problems or limitations: [James: add this]
+- My model uses OpenCV's face detection software as well as MobileNetV2 and a small neural net to output emotional scores.
+- To run: open the notebook in Colab w/ the T4 GPU selected and set DEMO_MODE = True -> allows testing without DAiSEE,
+  for full use, download DAiSEE (info down below), upload the complete or partial set to your Drive, and run through the code cells. 
+- So far, testing has yielded these results: 56.75% accuracy, 0.184 MAE, 8-12 FPS.
+- The notebook has extra markdown cells for further clarification.
+
+  While far from perfect (mostly due to DAiSEE confusion & frustration labeling flaws) the code should be in a stable condition. 
 
 ### Middle Model - Jayden
 
@@ -98,8 +101,12 @@ We matched the label to the DAiSEE emotion scores using the clip ID. These are o
 ## What Each Person Worked On
 
 **James Martin:** 
+-Built & tested the Computer Vision model
+-Uploaded and tested reduced testset of DAiSEE
+-Uploaded and implemented full DAiSEE set
+-Assisting Jayden with extra labeling
 
-**Jayden Allen (me):**
+**Jayden Allen:**
 - Built and tested the GRU middle model and the extra check-in rule.
 - Watched and labeled 274 DAiSEE clips.
 - Worked on the labeling setup and the notebook.
