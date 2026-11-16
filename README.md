@@ -48,7 +48,8 @@ James is working on the computer vision portion. This will be what supplies the 
 
 - My model uses OpenCV's face detection software as well as MobileNetV2 and a small neural net to output emotional scores.
 - To run: open the notebook in Colab w/ the T4 GPU selected and set DEMO_MODE = True -> allows testing without DAiSEE,
-  for full use, download DAiSEE (info down below), upload the complete or partial set to your Drive, and run through the code cells. 
+  for full use, download DAiSEE (info down below), upload the complete or partial set to your Drive, and run through the code cells.
+  IMPORTANT: if run with DEMO_MODE = False, Colab will prompt you to connect your Drive to search for DAiSEE 
 - So far, testing has yielded these results: 56.75% accuracy, 0.184 MAE, 8-12 FPS.
 - The notebook has extra markdown cells for further clarification.
 
